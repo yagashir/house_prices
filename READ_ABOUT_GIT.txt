@@ -1,0 +1,37 @@
+gitおよびgithubの使い方
+
+1. ローカルリポジトリの新規作成・登録
+	git init
+
+2. インデックスに追加
+	git add ファイル名
+
+3. 変更履歴の保存
+	git commit -m "コミットメッセージを入力"
+
+etc. 差分の確認
+	git diff
+
+etc. 履歴を基に前の状態に戻す
+	git reset コミットの識別番号
+		  HEAD^で直前に戻る
+
+etc. ログの確認
+	git log
+
+5. Githubにてリポジトリの作成およびSSHのリポジトリURLのコピー
+
+6. ローカルリポジトリとリモートリポジトリの紐付け
+	git remote add origin リポジトリURL
+	確認 -> git remote -v
+
+7. ブランチをmasterからmainへ変更
+	git branch -M main
+
+8. リモートリポジトリへプッシュ（反映）
+	git push -u origin main
+
+
+
+リモートリポジトリの変更履歴をローカルリポジトリへ反映
+	git pull origin main
